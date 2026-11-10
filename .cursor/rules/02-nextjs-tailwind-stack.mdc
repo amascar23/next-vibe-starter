@@ -1,0 +1,45 @@
+---
+description: Technical architecture rules for Next.js 15, React 19, and Tailwind CSS
+globs: src/**/*
+alwaysApply: true
+---
+
+# ⚡ NEXT.JS 15 & TAILWIND CSS ARCHITECTURE
+
+## 1. Directory Structure Conventions
+```
+src/
+├── app/                  # Next.js 15 App Router
+│   ├── layout.tsx        # Root layout with HTML/Body and Providers
+│   ├── page.tsx          # Home page
+│   ├── globals.css       # Tailwind & CSS variable declarations
+│   └── api/              # Route handlers (GET, POST, PUT, DELETE)
+├── components/
+│   ├── ui/               # Reusable primitive UI (button, card, badge, dialog)
+│   ├── layout/           # Header, footer, sidebar, navigation
+│   └── [feature]/        # Feature-scoped components (e.g., catalog, auth, cart)
+├── lib/                  # Utility functions (cn, formatters, client instances)
+├── types/                # Global TypeScript declarations and domain types
+└── hooks/                # Custom React hooks (prefixed with `use`)
+```
+
+## 2. Next.js 15 App Router Rules
+- **Route Handlers**: Use `NextRequest` and `NextResponse` from `next/server`.
+- **Metadata**: Define `export const metadata: Metadata = { ... }` or `generateMetadata` for dynamic pages.
+- **Image Optimization**: Always use `next/image` with explicit `width`, `height`, and `alt`.
+- **Navigation**: Always use `next/link` for internal links.
+
+## 3. Tailwind CSS & shadcn/ui Standards
+- UI primitives should follow shadcn/ui patterns using `cva` (class-variance-authority).
+- Colors are referenced via CSS variables: `bg-background`, `text-foreground`, `bg-primary`, `border-border`.
+- Responsive breakpoints:
+  - `sm:` (640px)
+  - `md:` (768px)
+  - `lg:` (1024px)
+  - `xl:` (1280px)
+- Never mix raw inline CSS `style={{ ... }}` when Tailwind utility classes can achieve the same result.
+
+## 4. State Management
+- Prefer URL query parameters (`searchParams`) for filter, pagination, and sorting state.
+- Use React Context only for global UI states (e.g. theme, active modal).
+- Keep state local to components whenever possible.

@@ -1,0 +1,57 @@
+---
+description: 3-Stage Progressive Disclosure Workflow from PRD to Execution
+globs: PRD.md, AGENTS.md, src/**/*
+alwaysApply: true
+---
+
+# 🔄 3-STAGE PROGRESSIVE DISCLOSURE WORKFLOW
+
+This workflow prevents hallucinations, scope creep, and chaotic code dumping by enforcing a 3-stage funnel.
+
+```
+[ Ide Kasar User ] 
+       ↓ 
+ (Tahap 1: Wawancara Mendalam AI) 
+       ↓ 
+ [ PRD.md ] ── User Review & Approval ──→ [ AGENTS.md (Daftar Task Atomik) ]
+                                                   ↓
+                                         (Tahap 3: Eksekusi Task per Task)
+                                                   ↓
+                                         [ Verified Feature + Git Commit ]
+```
+
+---
+
+## 📋 TAHAP 1: DOKUMEN KEBUTUHAN PRODUK (`PRD.md`)
+1. AI melakukan wawancara menyeluruh (5-8 pertanyaan terarah).
+2. Jawaban user diformulasikan ke dalam struktur `PRD.md`.
+3. Dokumen harus mencakup:
+   - Target User & Persona
+   - User Journey & Acceptance Criteria
+   - Skema Database & Relasi Tabel
+   - Daftar Halaman & Navigasi
+4. **Gerbang Persetujuan**: Pengguna harus menyatakan persetujuan sebelum berpindah ke Tahap 2.
+
+---
+
+## 📝 TAHAP 2: DAFTAR TUGAS SISTEMATIS (`AGENTS.md`)
+1. AI memecah `PRD.md` menjadi tugas-tugas kecil dan terisolasi.
+2. Format setiap task:
+   ```markdown
+   ### [ ] Task 1: Setup Schema Database & TypeScript Types
+   - **Tujuan**: Membuat type model produk dan kategori
+   - **File yang disentuh**: `src/types/product.ts`, `src/lib/db.ts`
+   - **Kriteria Selesai**: Type terdefinisi tanpa error TypeScript
+   ```
+3. Urutkan berdasarkan dependensi logis (Fondasi -> Komponen UI -> Integrasi Halaman -> Interaktivitas & Validasi).
+
+---
+
+## 🔨 TAHAP 3: EKSEKUSI BERTAHAP (ONE TASK AT A TIME)
+1. User menginstruksikan: *"Eksekusi Task 1"*.
+2. AI hanya mengerjakan file-file yang relevan dengan Task 1.
+3. Setelah selesai:
+   - AI memverifikasi hasil tidak menghasilkan build error.
+   - AI mengubah checkbox dari `[ ]` menjadi `[x]`.
+   - AI menyarankan semantic git commit message.
+4. Lanjut ke task berikutnya hanya setelah user memberi aba-aba.

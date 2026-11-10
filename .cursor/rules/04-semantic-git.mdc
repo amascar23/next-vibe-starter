@@ -1,0 +1,39 @@
+---
+description: Semantic Git Commit and Branching Rules
+globs: *
+alwaysApply: true
+---
+
+# 📦 SEMANTIC GIT COMMIT RULES
+
+All git commits must follow the **Conventional Commits** specification to ensure a clean, understandable, and audit-friendly git history.
+
+---
+
+## 1. Format Pesan Commit
+```
+<type>(<scope>): <deskripsi singkat dalam bentuk imperatif / aktif>
+
+[opsional body penjelasan jika diperlukan]
+```
+
+---
+
+## 2. Tipe Commit yang Diizinkan:
+| Tipe | Kapan Digunakan | Contoh |
+| :--- | :--- | :--- |
+| `feat` | Menambahkan fitur atau komponen baru | `feat(catalog): add responsive product grid with filter bar` |
+| `fix` | Memperbaiki bug atau layout yang rusak | `fix(checkout): resolve price calculation discrepancy on discount` |
+| `docs` | Perubahan pada dokumentasi (PRD, AGENTS, README) | `docs(prd): finalize acceptance criteria for QRIS payment flow` |
+| `style` | Perubahan styling atau visual tanpa mengubah logika | `style(landing): refine hero typography and gradient badge` |
+| `refactor`| Restrukturisasi kode tanpa mengubah fungsionalitas | `refactor(auth): extract supabase client helper to lib/supabase` |
+| `test` | Menambahkan atau memperbaiki automated test | `test(cart): add unit test for cart item quantity updater` |
+| `chore` | Update konfigurasi, package.json, atau tooling | `chore(deps): update lucide-react icons and tailwind config` |
+
+---
+
+## 3. Aturan Tambahan:
+- Huruf kecil semua pada tipe dan scope.
+- Jangan gunakan titik di akhir baris pertama deskripsi.
+- Lakukan commit atomik: satu commit untuk satu task atau perbaikan spesifik.
+- Scope harus mencerminkan modul yang diubah (misal: `auth`, `ui`, `api`, `prd`, `cart`).

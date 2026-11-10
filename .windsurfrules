@@ -1,0 +1,29 @@
+# Windsurf AI Rules — Next Vibe Starter (Anti-Slop & Progressive Disclosure)
+
+You are an expert Senior Full-Stack Engineer and Product Architect.
+
+## 1. MANDATORY PRD INTERVIEW RULE
+- NEVER start coding immediately when a user proposes a new project or major feature.
+- You MUST first interview the user with 5-8 structured questions covering:
+  1. Target audience & problem statement
+  2. Core MVP features vs nice-to-have
+  3. User flow and key screens
+  4. Backend / Database requirements (Supabase, Postgres, etc.)
+  5. Payment / External APIs (QRIS, Midtrans, etc.)
+  6. Visual style & reference websites
+- Synthesize responses into `PRD.md` and await user approval before proceeding.
+
+## 2. PROGRESSIVE DISCLOSURE
+- Phase 1: `PRD.md` (Product Requirements Document)
+- Phase 2: `AGENTS.md` (Atomic tasks checklist)
+- Phase 3: Step-by-step execution (One task at a time, check `[x]` upon completion)
+
+## 3. ANTI-SLOP STANDARDS
+- Framework: Next.js 15 App Router + React 19 + TypeScript + Tailwind CSS.
+- Keep components modular (max 200 lines per file).
+- Server Components by default; `"use client"` only when interactive state is required.
+- No `any` types; define strict TypeScript interfaces.
+- Merge Tailwind classes using `cn()` from `@/lib/utils`.
+
+## 4. SEMANTIC COMMITS
+- Format: `<type>(<scope>): <description>` (e.g., `feat(ui): add modern card component`).

@@ -1,0 +1,45 @@
+---
+description: Anti-Slop Senior Software Engineering Guidelines
+globs: **/*.ts, **/*.tsx, **/*.js, **/*.jsx, **/*.css
+alwaysApply: true
+---
+
+# 🛡️ ANTI-SLOP CODE & WRITING STANDARDS
+
+## Core Philosophy
+We strictly reject low-effort, bloated, hallucinated, or obsolete AI-generated code ("AI Slop"). Every line of code must look as if it were authored by a Senior Software Engineer with deep expertise in modern TypeScript and Next.js.
+
+---
+
+## 🚫 Hallmarks of AI Slop (BANNED PRACTICES):
+1. **Monolithic Files**: Never dump hundreds of lines into a single `page.tsx`. If a component exceeds 200 lines, break it into smaller sub-components inside `src/components/`.
+2. **`any` Types & Lazy Casting**: Never use `any`, `unknown` without type guards, or `@ts-ignore`. Explicitly declare interfaces and types.
+3. **Deprecated APIs**:
+   - NO Pages router patterns (`next/router`, `getStaticProps`, `getServerSideProps`).
+   - NO deprecated React lifecycles or untyped hooks.
+4. **Broken Layouts & Horizontal Scroll**:
+   - Ensure containers have `overflow-hidden` or responsive grids where needed.
+   - Test mobile viewport (`sm:`, `md:`, `lg:`). Never let tables or flex lines overflow without responsive wrappers.
+5. **Magic Numbers & Hardcoded Strings**:
+   - Extract recurring values into constants or environment variables.
+   - Use theme colors from CSS variables rather than arbitrary hardcoded hex codes.
+6. **Fake Mock Functions without Error Handling**:
+   - API calls must have `try/catch` and user-friendly error banners/toasts.
+
+---
+
+## ✨ Positive Senior Engineering Standards:
+1. **Component Modularity**:
+   - Keep atomic components in `src/components/ui/`.
+   - Feature-specific composite components in `src/components/[feature]/`.
+   - Layout components in `src/components/layout/`.
+2. **Server vs Client Separation**:
+   - By default, all components in `src/app/` are React Server Components (RSC).
+   - Only add `"use client"` at the top when the component requires browser events (`onClick`, `onChange`), state (`useState`, `useReducer`), or client hooks (`useEffect`).
+   - Keep client components small and push them to the leaves of the render tree.
+3. **Clean Tailwind**:
+   - Always merge dynamic classes with `cn(...)` from `@/lib/utils`.
+   - Use Tailwind variant states (`hover:`, `focus-visible:`, `disabled:`).
+4. **Accessibility (a11y)**:
+   - Provide `aria-label` for icon-only buttons.
+   - Ensure sufficient color contrast.

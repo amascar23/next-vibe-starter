@@ -1,0 +1,46 @@
+---
+description: Mandatory PRD Interview Protocol before any code generation
+globs: PRD.md, *.md, *
+alwaysApply: true
+---
+
+# 🎯 MANDATORY PRD INTERVIEW PROTOCOL
+
+## Rule Status: CRITICAL / BLOCKING
+You are STRICTLY FORBIDDEN from generating source code (`.ts`, `.tsx`, `.css`, `.sql`) when a user presents a new project idea or broad feature request.
+
+Before any code is drafted, you MUST conduct a thorough, structured, multi-question interview with the user ("Kak Han") to build an exhaustive `PRD.md`.
+
+---
+
+## 🛑 What You CANNOT Do:
+1. Do NOT start generating components or folder structures right away.
+2. Do NOT assume database tables, authentication providers, or third-party gateways.
+3. Do NOT produce generic placeholder code.
+
+---
+
+## ✅ What You MUST Do:
+When the user says "Mulai proyek baru", "Bikin web...", or provides an idea:
+
+1. **Acknowledge the Idea enthusiastically**: Briefly summarize what you understand from their idea in 2-3 sentences.
+2. **Present the Structured Interview Questions**: Group your questions clearly across these essential pillars:
+   - **👥 Target Pengguna & Persona**: Siapa pengguna utama web ini? Apakah ada tipe user berbeda (misal: Pembeli vs Penjual, User Biasa vs Admin)?
+   - **⭐ Fitur Utama (MVP vs Fase Lanjutan)**: Apa 3-5 fitur inti yang mutlak harus ada di rilis pertama? Fitur apa yang bisa ditunda ke fase berikutnya?
+   - **🗺️ Alur Pengguna (User Flow) & Halaman**: Halaman apa saja yang perlu ada (Landing page, Katalog, Detail, Dashboard, Checkout)? Bagaimana alur dari pengunjung datang sampai tujuan tercapai?
+   - **🗄️ Database & Integrasi Eksternal**: Apakah butuh penyimpanan database (Supabase, PostgreSQL, SQLite)? Apakah butuh pembayaran (QRIS, Midtrans)? Notifikasi (WhatsApp, Email)?
+   - **🎨 Preferensi Visual & Desain**: Gaya desain seperti apa yang diinginkan (Modern minimalis, Dark mode, Colorful playful, Corporate)? Apakah ada website referensi?
+   - **⚠️ Aturan Bisnis & Validasi Khusus**: Apakah ada batasan kuota, role permission, atau kalkulasi khusus yang harus dihitung?
+3. **Wait for User Response**: Let the user answer freely.
+4. **Synthesize & Formulate `PRD.md`**:
+   - Write or update `PRD.md` with:
+     - Executive Summary & Problem Statement
+     - User Personas & User Stories with Acceptance Criteria
+     - Scope & Feature Prioritization (MoSCoW method)
+     - Information Architecture & Page List
+     - Technical Stack & Database Schema (Tables, Fields, Relationships)
+     - API & Integration Specs
+     - Non-Functional Requirements
+5. **Request Final Approval**:
+   - Ask: *"Apakah dokumen PRD di atas sudah sesuai dengan ekspektasi Kak Han? Jika sudah setuju, ketik 'Lanjut ke AGENTS.md' untuk kita pecah menjadi tugas eksekusi."*
+6. Only proceed to Phase 2 (`AGENTS.md`) after explicit user confirmation!
