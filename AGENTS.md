@@ -18,7 +18,7 @@
 ## 📌 DAFTAR TUGAS EKSEKUSI ATOMIK
 
 ### Phase 1: Fondasi, Tema Pastel & Skema Data
-- [ ] **Task 1: Definisi Model Data & TypeScript Contracts**
+- [x] **Task 1: Definisi Model Data & TypeScript Contracts**
   - **Goal**: Mendefinisikan interface data lengkap untuk profil guru, jurnal ilmiah, karya inovasi pembelajaran, timeline pengalaman, kompetensi, dan testimoni.
   - **Files**: `src/types/portfolio.ts`, `src/types/index.ts`
   - **Acceptance Criteria**: Type compiling tanpa error (`npx tsc --noEmit`) dengan strict mode tanpa `any`.
@@ -28,7 +28,7 @@
   - **Files**: `src/data/portfolio.ts`
   - **Acceptance Criteria**: Data terhubung penuh dengan interface TypeScript, dapat diimpor dan dibaca secara type-safe.
 
-- [ ] **Task 3: Konfigurasi Tema Pastel Creative Sky Blue & Theme Support**
+- [x] **Task 3: Konfigurasi Tema Pastel Creative Sky Blue & Theme Support**
   - **Goal**: Menyesuaikan token warna Tailwind CSS ke palet Pastel Biru Langit (`sky-400`, `sky-500`, background tint lembut) serta setup `ThemeProvider` dan tombol toggle Dark/Light mode.
   - **Files**: `tailwind.config.ts`, `src/app/globals.css`, `src/components/theme-provider.tsx`, `src/components/theme-toggle.tsx`
   - **Acceptance Criteria**: Nuansa pastel biru langit aktif secara konsisten, toggle dark/light mode berjalan mulus tanpa hydration error.

@@ -74,9 +74,9 @@ flowchart TD
 
 | Task | Deskripsi | Output File | Status |
 | :--- | :--- | :--- | :---: |
-| **Task 1** | Definisi Type Data TypeScript (Profil Guru, Jurnal, Karya Ajar, Timeline) | `src/types/portfolio.ts` | ⏳ Ready |
+| **Task 1** | Definisi Type Data TypeScript (Profil Guru, Jurnal, Karya Ajar, Timeline) | `src/types/portfolio.ts` | ✅ Done |
 | **Task 2** | Mock Data Realistis Pendidik & Jurnal Ilmiah SINTA/ISSN | `src/data/portfolio.ts` | ⏳ Ready |
-| **Task 3** | Setup Tema Pastel Sky Blue (`sky-400`, `sky-500`, soft tints) & Toggle Mode | `tailwind.config.ts`, `globals.css` | ⏳ Ready |
+| **Task 3** | Setup Tema Pastel Sky Blue (`sky-400`, `sky-500`, soft tints) & Toggle Mode | `tailwind.config.ts`, `globals.css` | ✅ Done |
 
 ---
 
@@ -136,3 +136,4 @@ Setelah website selesai dibangun, Annisa dapat memperbarui konten kapan saja den
 4. **Deploy ke Vercel**:
    - Hubungkan repository GitHub ini ke akun [Vercel](https://vercel.com).
    - Setiap kali ada `git push` ke branch `main`, website akan otomatis ter-update secara instan (*auto-deploy*).
+
