@@ -1,8 +1,8 @@
 {
-  "name": "next-vibe-starter",
+  "name": "profil-annisa",
   "version": "1.0.0",
-  "private": false,
-  "description": "⚡ The Ultimate Anti-Slop Vibe Coding Boilerplate: Next.js 15, Tailwind CSS, TypeScript, and Disciplined AI Rulesets with Mandatory PRD Interview.",
+  "private": true,
+  "description": "Web Portofolio & Jurnal Edukasi Annisa — Pendidik, Akademisi & Inovator Pembelajaran",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
