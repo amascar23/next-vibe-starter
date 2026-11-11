@@ -67,7 +67,7 @@
 ---
 
 ### Phase 4: Halaman Detail Khusus (Multi-Page Exploration)
-- [ ] **Task 9: Halaman Detail Publikasi Jurnal Ilmiah (`/jurnal/[slug]`)**
+- [x] **Task 9: Halaman Detail Publikasi Jurnal Ilmiah (`/jurnal/[slug]`)**
   - **Goal**: Membuat halaman dinamis untuk telaah lengkap jurnal ilmiah: informasi penerbit, abstrak mendalam, metodologi, temuan penelitian, dan tombol unduh paper.
   - **Files**: `src/app/jurnal/[slug]/page.tsx`
   - **Acceptance Criteria**: Routing dinamis berjalan lancar, penanganan 404 jika slug salah, tombol kembali ke beranda.
