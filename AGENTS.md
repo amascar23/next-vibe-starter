@@ -49,7 +49,7 @@
 ---
 
 ### Phase 3: Perakitan Halaman Utama (Single-Page Scroll)
-- [ ] **Task 6: Seksi Hero & Tentang Saya (Filosofi Pendidik & Metrik)**
+- [x] **Task 6: Seksi Hero & Tentang Saya (Filosofi Pendidik & Metrik)**
   - **Goal**: Membangun Hero section ramah dengan foto profil berbingkai pastel, headline peran pendidik, badge kolaborasi, tombol CTA WhatsApp & Unduh CV, serta seksi Filosofi Mengajar & Metrik ringkas.
   - **Files**: `src/components/sections/hero-section.tsx`, `src/components/sections/about-section.tsx`
   - **Acceptance Criteria**: Visual estetik, responsif di mobile/desktop, CTA terhubung dengan benar.
