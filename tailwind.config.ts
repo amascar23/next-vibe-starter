@@ -10,12 +10,19 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1rem",
+        sm: "1.5rem",
+        lg: "2rem",
+      },
       screens: {
-        "2xl": "1400px",
+        "2xl": "1280px",
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", "system-ui", "-apple-system", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -50,11 +57,37 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Token warna pastel creative spesifik untuk Annisa
+        pastel: {
+          sky: {
+            50: "#f0f9ff",
+            100: "#e0f2fe",
+            200: "#bae6fd",
+            300: "#7dd3fc",
+            400: "#38bdf8",
+            500: "#0ea5e9",
+            600: "#0284c7",
+          },
+          lavender: {
+            50: "#f5f3ff",
+            100: "#ede9fe",
+            200: "#ddd6fe",
+            300: "#c4b5fd",
+            400: "#a78bfa",
+          },
+          mint: {
+            50: "#f0fdf4",
+            100: "#dcfce7",
+            200: "#bbf7d0",
+          },
+        },
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        "2xl": "var(--radius)", // 1rem (16px) untuk kartu berlekuk lembut
+        xl: "calc(var(--radius) - 4px)",
+        lg: "calc(var(--radius) - 6px)",
+        md: "calc(var(--radius) - 8px)",
+        sm: "calc(var(--radius) - 10px)",
       },
       keyframes: {
         "accordion-down": {
@@ -65,15 +98,15 @@ const config: Config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        pulse_subtle: {
-          "0%, 100%": { opacity: "1" },
-          "50%": { opacity: "0.6" },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-6px)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "pulse-subtle": "pulse_subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        float: "float 4s ease-in-out infinite",
       },
     },
   },

@@ -1,6 +1,14 @@
 import type { Metadata, Viewport } from "next";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Portofolio Annisa — Pendidik, Akademisi & Inovator Pembelajaran",
@@ -31,7 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" suppressHydrationWarning className="scroll-smooth">
-      <body className="min-h-screen flex flex-col bg-background font-sans text-foreground antialiased selection:bg-sky-500/20 selection:text-sky-700 dark:selection:text-sky-300">
+      <body
+        className={`${plusJakartaSans.variable} font-sans min-h-screen flex flex-col bg-background text-foreground antialiased selection:bg-sky-500/20 selection:text-sky-800 dark:selection:text-sky-200`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
