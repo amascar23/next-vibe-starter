@@ -86,7 +86,7 @@ flowchart TD
 | Task | Deskripsi | Output File | Status |
 | :--- | :--- | :--- | :---: |
 | **Task 4** | Navbar Glassmorphism sticky + mobile drawer & Footer ramah | `src/components/layout/` | ✅ Done |
-| **Task 5** | Komponen Kartu Jurnal (Badge SINTA/ISSN, PDF button) & Kartu Karya Ajar | `src/components/portfolio/` | ⏳ Ready |
+| **Task 5** | Komponen Kartu Jurnal (Badge SINTA/ISSN, PDF button) & Kartu Karya Ajar | `src/components/portfolio/` | ✅ Done |
 
 ---
 

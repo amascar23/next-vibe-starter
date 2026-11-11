@@ -41,9 +41,9 @@
   - **Files**: `src/components/layout/header.tsx`, `src/components/layout/footer.tsx`
   - **Acceptance Criteria**: Navigasi responsif sempurna di perangkat mobile (drawer/menu) dan desktop, anchor link meluncur mulus.
 
-- [ ] **Task 5: Komponen Kartu Publikasi Jurnal & Modul Ajar**
+- [x] **Task 5: Komponen Kartu Publikasi Jurnal & Modul Ajar**
   - **Goal**: Membuat komponen kartu modular untuk jurnal ilmiah (badge SINTA/ISSN, tahun, tombol baca detail & unduh PDF) dan kartu karya inovasi ajar.
-  - **Files**: `src/components/portfolio/journal-card.tsx`, `src/components/portfolio/teaching-card.tsx`, `src/components/portfolio/timeline-item.tsx`
+  - **Files**: `src/components/portfolio/journal-card.tsx`, `src/components/portfolio/project-card.tsx`, `src/components/portfolio/timeline-item.tsx`, `src/components/portfolio/testimonial-card.tsx`, `src/components/portfolio/index.ts`
   - **Acceptance Criteria**: Komponen modular (< 200 baris per file), visual konsisten dengan tema sky blue pastel.
 
 ---

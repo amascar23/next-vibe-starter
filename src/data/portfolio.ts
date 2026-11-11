@@ -16,7 +16,7 @@ export const profileData: TeacherProfile = {
   tagline: "Mendedikasikan ilmu untuk menyalakan api rasa ingin tahu dan memantik potensi terbaik setiap insan pembelajar.",
   bio: "Lulusan Pendidikan dengan fokus pada pengembangan model pembelajaran aktif, integrasi teknologi edukasi (EdTech), dan penelitian tindakan kelas. Berpengalaman memfasilitasi kelas menengah yang inklusif serta aktif mendiseminasikan praktik baik melalui publikasi jurnal ilmiah nasional terakreditasi.",
   philosophy: "Pendidikan bermakna berakar pada pendekatan yang berpusat pada siswa (student-centered learning). Guru hadir bukan sebagai satu-satunya penyampai kebenaran mutlak, melainkan fasilitator yang menciptakan ruang aman bagi siswa untuk mengeksplorasi gagasan, berani bertanya, berkolaborasi, dan berpikir kritis.",
-  avatarUrl: "/images/profile.jpg", // GANTI DENGAN DATA ASLI: Letakkan foto profil di public/images/profile.jpg
+  avatarUrl: "/images/profile.svg", // GANTI DENGAN DATA ASLI: Letakkan foto profil di public/images/profile.svg
   resumePdfUrl: "/docs/cv-annisa.pdf", // GANTI DENGAN DATA ASLI: Letakkan berkas CV PDF di public/docs/cv-annisa.pdf
   isOpenForCollaboration: true,
   email: "annisa.pendidik@gmail.com", // GANTI DENGAN DATA ASLI: Alamat email aktif
@@ -205,7 +205,7 @@ export const projectsData: TeachingProject[] = [
     subject: "Ilmu Pengetahuan Alam (IPA)",
     summary: "Modul ajar kontekstual berbasis studi kasus pelestarian hutan mangrove dan terumbu karang Indonesia dengan panduan berbasis proyek.",
     description: "Modul ajar inovatif yang dirancang untuk memfasilitasi model Project-Based Learning (PjBL). Modul ini mengajak siswa melakukan investigasi ekologi lokal melalui barcode video interaktif, kartu identifikasi rantai makanan visual, serta panduan proyek pembuatan biopori sederhana di lingkungan rumah.",
-    thumbnail: "/images/project-modul-ipa.jpg", // GANTI DENGAN DATA ASLI: Letakkan thumbnail di public/images/
+    thumbnail: "/images/project-modul-ipa.svg", // GANTI DENGAN DATA ASLI: Letakkan thumbnail di public/images/
     toolsUsed: ["Canva for Education", "Google Docs", "Liveworksheets", "YouTube Edu"],
     resultsAndImpact: "Telah diujicobakan pada 3 kelas paralel (96 siswa). Sebanyak 91% siswa mencapai ketuntasan asesmen formatif kognitif, menghasilkan 24 karya poster edukasi lingkungan, serta diadopsi sebagai referensi modul ajar unggulan pada MGMP IPA setempat.",
     demoUrl: "https://canva.com/design/demo-modul-ipa-annisa", // GANTI DENGAN DATA ASLI: Tautan preview modul
@@ -219,7 +219,7 @@ export const projectsData: TeachingProject[] = [
     subject: "Matematika",
     summary: "Media asesmen dan eksplorasi konsep aljabar dengan alur cerita superhero sains untuk mematahkan stigma matematika yang menakutkan.",
     description: "Media pembelajaran interaktif yang menyatukan infografis visual terstruktur dari Canva dengan mode petualangan tim di platform Quizizz. Siswa memecahkan teka-teki persamaan linear satu variabel untuk membuka petunjuk misi sains berikutnya, dilengkapi papan skor kolaboratif dan refleksi mandiri di akhir sesi.",
-    thumbnail: "/images/project-quizizz-math.jpg", // GANTI DENGAN DATA ASLI
+    thumbnail: "/images/project-quizizz-math.svg", // GANTI DENGAN DATA ASLI
     toolsUsed: ["Quizizz", "Canva for Education", "Desmos Graphing", "GeoGebra"],
     resultsAndImpact: "Menurunkan kecemasan belajar matematika (math anxiety) siswa sebesar 35% berdasarkan survei pre-post intervensi, serta mencatatkan tingkat partisipasi aktif kuis hingga 100% di kelas.",
     demoUrl: "https://quizizz.com/join?gc=demo-math-annisa", // GANTI DENGAN DATA ASLI
@@ -233,7 +233,7 @@ export const projectsData: TeachingProject[] = [
     subject: "Bahasa Indonesia & Literasi Kritis",
     summary: "Lembar kerja peserta didik berjenjang dengan kebebasan memilih produk luaran (infografis, podcast audio, atau esai refleksi analitis).",
     description: "LKPD digital ramah perangkat genggam yang dirancang khusus untuk memenuhi kebutuhan belajar siswa dengan profil kecerdasan majemuk. Menghadirkan studi kasus teks berita dan editorial hangat, di mana siswa dapat memilih jalur unjuk pemahaman sesuai gaya berekspresi terbaik mereka.",
-    thumbnail: "/images/project-lkpd-digital.jpg", // GANTI DENGAN DATA ASLI
+    thumbnail: "/images/project-lkpd-digital.svg", // GANTI DENGAN DATA ASLI
     toolsUsed: ["Google Classroom", "Canva Edu", "Padlet Interaktif", "Spotify for Podcasters"],
     resultsAndImpact: "Diadaptasi oleh 8 guru di komunitas MGMP. Terbukti meningkatkan orisinalitas argumen dan kekritisan telaah teks siswa sebesar 28% dibandingkan pengerjaan lembar kerja format cetak statis.",
     demoUrl: "https://padlet.com/annisa-educator/lkpd-literasi", // GANTI DENGAN DATA ASLI
@@ -247,7 +247,7 @@ export const projectsData: TeachingProject[] = [
     subject: "Pengabdian Masyarakat & Edukasi Literasi",
     summary: "Inisiatif pengabdian mendirikan ruang baca ramah anak, pelatihan membaca nyaring, serta kelas sains akhir pekan swadaya.",
     description: "Program kemasyarakatan yang mengolaborasikan donasi 500+ buku bacaan bermutu, pelatihan teknik membacakan buku (Read Aloud) bagi pemuda karang taruna setempat, serta penyelenggaraan kelas sains eksperimen sederhana mingguan untuk anak-anak pedesaan.",
-    thumbnail: "/images/project-pengabdian-literasi.jpg", // GANTI DENGAN DATA ASLI
+    thumbnail: "/images/project-pengabdian-literasi.svg", // GANTI DENGAN DATA ASLI
     toolsUsed: ["Metode Read Aloud", "Google Forms Survei", "Notion Kolaborasi", "Dokumentasi Komunitas"],
     resultsAndImpact: "Menjangkau lebih dari 140 anak desa, melatih 15 pemuda lokal menjadi fasilitator literasi mandiri, dan berhasil mendirikan ruang baca komunitas yang beroperasi aktif hingga saat ini.",
     demoUrl: "https://instagram.com/p/pojokbaca-annisa-demo", // GANTI DENGAN DATA ASLI
@@ -386,7 +386,7 @@ export const testimonialsData: TestimonialItem[] = [
     name: "Bambang Wijaya, S.Pd., M.M.", // GANTI DENGAN DATA ASLI
     role: "Guru Senior & Ketua Musyawarah Guru Mata Pelajaran (MGMP)",
     institution: "SMP Negeri Mitra / Rekan Sejawat Guru", // GANTI DENGAN DATA ASLI
-    avatarUrl: "/images/avatar-bambang.jpg", // GANTI DENGAN DATA ASLI
+    avatarUrl: "/images/avatar-bambang.svg", // GANTI DENGAN DATA ASLI
     quote: "Ibu Annisa adalah sosok pendidik muda yang membawa energi pembaruan luar biasa di ruang guru kami. Terobosannya dalam memadukan gamifikasi asesmen dan modul ajar interaktif berhasil menginspirasi rekan-rekan pendidik senior untuk lebih berani bertransformasi digital.",
     content: "Ibu Annisa adalah sosok pendidik muda yang membawa energi pembaruan luar biasa di ruang guru kami. Terobosannya dalam memadukan gamifikasi asesmen dan modul ajar interaktif berhasil menginspirasi rekan-rekan pendidik senior untuk lebih berani bertransformasi digital.",
   },
@@ -395,7 +395,7 @@ export const testimonialsData: TestimonialItem[] = [
     name: "Prof. Dr. Irwan Prasetyo, M.Pd.", // GANTI DENGAN DATA ASLI
     role: "Guru Besar & Dosen Pembimbing Skripsi",
     institution: "Fakultas Keguruan & Ilmu Pendidikan", // GANTI DENGAN DATA ASLI
-    avatarUrl: "/images/avatar-irwan.jpg", // GANTI DENGAN DATA ASLI
+    avatarUrl: "/images/avatar-irwan.svg", // GANTI DENGAN DATA ASLI
     quote: "Integritas riset dan keuletan Annisa dalam meneliti efektivitas model pembelajaran sangat menonjol sejak masa perkuliahan. Publikasi jurnal yang dihasilkannya memiliki landasan metodologi yang kokoh dan memberikan kontribusi nyata bagi pemecahan problem pembelajaran di kelas.",
     content: "Integritas riset dan keuletan Annisa dalam meneliti efektivitas model pembelajaran sangat menonjol sejak masa perkuliahan. Publikasi jurnal yang dihasilkannya memiliki landasan metodologi yang kokoh dan memberikan kontribusi nyata bagi pemecahan problem pembelajaran di kelas.",
   },
@@ -404,7 +404,7 @@ export const testimonialsData: TestimonialItem[] = [
     name: "Farhan Maulana, S.Pd.", // GANTI DENGAN DATA ASLI
     role: "Rekan Peneliti & Alumni Kependidikan",
     institution: "Komunitas Guru Muda Indonesia", // GANTI DENGAN DATA ASLI
-    avatarUrl: "/images/avatar-farhan.jpg", // GANTI DENGAN DATA ASLI
+    avatarUrl: "/images/avatar-farhan.svg", // GANTI DENGAN DATA ASLI
     quote: "Berkolaborasi dengan Annisa dalam program pengabdian literasi pedesaan membuka mata saya tentang esensi mendidik dari hati. Annisa memiliki kepekaan analitis yang tajam dipadukan dengan kehangatan komunikasi yang membuat murid-murid selalu menantikan kehadirannya.",
     content: "Berkolaborasi dengan Annisa dalam program pengabdian literasi pedesaan membuka mata saya tentang esensi mendidik dari hati. Annisa memiliki kepekaan analitis yang tajam dipadukan dengan kehangatan komunikasi yang membuat murid-murid selalu menantikan kehadirannya.",
   },
@@ -413,7 +413,7 @@ export const testimonialsData: TestimonialItem[] = [
     name: "Ibu Dewi Sulistiyowati", // GANTI DENGAN DATA ASLI
     role: "Orang Tua / Wali Murid Kelas VIII",
     institution: "Komite Paguyuban Orang Tua Siswa", // GANTI DENGAN DATA ASLI
-    avatarUrl: "/images/avatar-dewi.jpg", // GANTI DENGAN DATA ASLI
+    avatarUrl: "/images/avatar-dewi.svg", // GANTI DENGAN DATA ASLI
     quote: "Putri saya yang sebelumnya sangat cemas dan tidak percaya diri setiap pelajaran hitungan, sekarang menjadi bersemangat menyambut hari sekolah. Pendekatan Bu Annisa yang sabar, ramah, dan menghargai proses belajar benar-benar membangkitkan rasa percaya diri anak kami.",
     content: "Putri saya yang sebelumnya sangat cemas dan tidak percaya diri setiap pelajaran hitungan, sekarang menjadi bersemangat menyambut hari sekolah. Pendekatan Bu Annisa yang sabar, ramah, dan menghargai proses belajar benar-benar membangkitkan rasa percaya diri anak kami.",
   },

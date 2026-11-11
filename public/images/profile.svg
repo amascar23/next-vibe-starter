@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="50%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#e0e7ff"/>
+    </linearGradient>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="40" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="150" r="65" fill="url(#avatarGrad)"/>
+  <path d="M110 320 C110 230, 290 230, 290 320 Z" fill="url(#avatarGrad)"/>
+  <!-- Hijab / Scarf silhouette drape -->
+  <path d="M135 150 C135 80, 265 80, 265 150 C265 210, 245 240, 200 245 C155 240, 135 210, 135 150 Z" fill="#0284c7" opacity="0.95"/>
+  <circle cx="200" cy="155" r="42" fill="#fed7aa"/>
+  <!-- Toga / Pendidik Cap Icon -->
+  <path d="M170 85 L200 70 L230 85 L200 100 Z" fill="#0369a1"/>
+  <rect x="195" y="98" width="10" height="15" fill="#0369a1"/>
+  <!-- Teks Nama -->
+  <text x="200" y="365" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0369a1" text-anchor="middle">Annisa, S.Pd.</text>
+  <text x="200" y="388" font-family="sans-serif" font-size="13" fill="#0284c7" text-anchor="middle">Pendidik &amp; Inovator Pembelajaran</text>
+</svg>
+
