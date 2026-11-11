@@ -116,8 +116,8 @@ flowchart TD
 
 | Task | Deskripsi | Output File | Status |
 | :--- | :--- | :--- | :---: |
-| **Task 11** | OpenGraph Card, Favicon Edukasi & Metadata Media Sosial | `src/app/layout.tsx` | ⏳ Ready |
-| **Task 12** | Validasi Build Tanpa Error (`npm run build`) & Panduan Deploy ke Vercel | Laporan Build & Deploy | ⏳ Ready |
+| **Task 11** | OpenGraph Card, Favicon Edukasi & Metadata Media Sosial | `src/app/layout.tsx`, `icon.svg`, `og.png`, `sitemap.ts`, `robots.ts` | ✅ Done |
+| **Task 12** | Validasi Build Tanpa Error (`npm run build`) & Panduan Deploy ke Vercel | Laporan Build & Deploy | ✅ Done |
 
 ---
 

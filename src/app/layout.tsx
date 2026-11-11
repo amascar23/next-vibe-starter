@@ -12,24 +12,72 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["400", "500", "600", "700", "800"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://annisa-pendidik.vercel.app";
+
 export const metadata: Metadata = {
-  title: "Portofolio Annisa — Pendidik, Akademisi & Inovator Pembelajaran",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Annisa, S.Pd. — Pendidik & Inovator Pembelajaran",
+    template: "%s | Annisa",
+  },
   description:
-    "Web portofolio personal edukatif dan dokumentasi publikasi jurnal ilmiah serta karya inovasi pembelajaran Annisa.",
+    "Portofolio pendidik, akademisi, dan inovator pembelajaran Annisa, S.Pd. Menampilkan modul ajar Kurikulum Merdeka, publikasi jurnal ilmiah terakreditasi SINTA, dan media edukasi interaktif.",
   keywords: [
     "Annisa",
-    "Pendidik",
-    "Guru",
-    "Jurnal Ilmiah",
-    "Inovasi Pembelajaran",
-    "Portofolio Guru",
-    "EdTech",
+    "Annisa Pendidik",
+    "Guru Inovatif",
+    "Pendidik Indonesia",
+    "Kurikulum Merdeka",
+    "Jurnal SINTA",
+    "Publikasi Ilmiah Pendidikan",
+    "Problem-Based Learning",
+    "Media Pembelajaran Interaktif",
+    "EdTech Guru",
+    "Modul Ajar SMP",
   ],
-  authors: [{ name: "Annisa", url: "mailto:anisahuksya@gmail.com" }],
+  authors: [{ name: "Annisa, S.Pd.", url: siteUrl }],
+  creator: "Annisa, S.Pd.",
+  publisher: "Annisa, S.Pd.",
+  openGraph: {
+    title: "Annisa, S.Pd. — Pendidik & Inovator Pembelajaran",
+    description:
+      "Portofolio pendidik, akademisi, dan inovator pembelajaran Annisa, S.Pd. Menghubungkan riset tindakan kelas dengan inovasi ruang belajar nyata.",
+    url: siteUrl,
+    siteName: "Portofolio Pendidik Annisa",
+    locale: "id_ID",
+    type: "website",
+    images: [
+      {
+        url: "/images/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Annisa, S.Pd. — Pendidik & Inovator Pembelajaran",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Annisa, S.Pd. — Pendidik & Inovator Pembelajaran",
+    description:
+      "Portofolio pendidik, akademisi, dan inovator pembelajaran Annisa, S.Pd. Menampilkan publikasi jurnal SINTA dan karya ajar kontekstual.",
+    creator: "@annisa_pendidik",
+    images: ["/images/og.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#38bdf8",
+  themeColor: "#0284c7",
   width: "device-width",
   initialScale: 1,
 };

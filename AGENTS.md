@@ -80,12 +80,12 @@
 ---
 
 ### Phase 5: Verifikasi Build, SEO & Kesiapan Deploy
-- [ ] **Task 11: Setup Metadata SEO, OpenGraph & Favicon Edukasi**
+- [x] **Task 11: Setup Metadata SEO, OpenGraph & Favicon Edukasi**
   - **Goal**: Mengonfigurasi metadata Next.js 15 (title, description, OpenGraph tags, preview social card) yang relevan untuk portofolio pendidik.
-  - **Files**: `src/app/layout.tsx`
+  - **Files**: `src/app/layout.tsx`, `src/app/icon.svg`, `public/images/og.png`, `src/app/robots.ts`, `src/app/sitemap.ts`
   - **Acceptance Criteria**: Metadata valid dan menarik saat tautan web dibagikan di WhatsApp/LinkedIn.
 
-- [ ] **Task 12: Audit Responsivitas, Build Test (`npm run build`), & Deployment Ready**
+- [x] **Task 12: Audit Responsivitas, Build Test (`npm run build`), & Deployment Ready**
   - **Goal**: Menjalankan pengujian build penuh untuk memvalidasi zero error TypeScript, tidak ada layout shift/overflow di mobile, dan siap dideploy ke Vercel.
   - **Files**: Evaluasi menyeluruh
   - **Acceptance Criteria**: `npm run build` sukses 100% tanpa error, web siap di-deploy secara langsung.
