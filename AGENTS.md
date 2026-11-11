@@ -59,7 +59,7 @@
   - **Files**: `src/components/sections/journals-section.tsx`, `src/components/sections/teaching-section.tsx`
   - **Acceptance Criteria**: Grid kartu jurnal dan karya tampil rapi, tombol menuju halaman detail berfungsi.
 
-- [ ] **Task 8: Seksi Kompetensi (Bento Grid), Pengalaman (Timeline), Testimoni & Kontak Terpadu**
+- [x] **Task 8: Seksi Kompetensi (Bento Grid), Pengalaman (Timeline), Testimoni & Kontak Terpadu**
   - **Goal**: Mengimplementasikan bento grid keahlian pedagogik/EdTech, timeline riwayat mengajar, rekomendasi/testimoni, dan seksi kontak (direct WhatsApp CTA, email copy, formulir pesan).
   - **Files**: `src/components/sections/skills-section.tsx`, `src/components/sections/experience-section.tsx`, `src/components/sections/testimonials-section.tsx`, `src/components/sections/contact-section.tsx`, `src/app/page.tsx`
   - **Acceptance Criteria**: Halaman beranda utama utuh, semua seksi terangkai rapi, alur kontak 1-klik berfungsi.
