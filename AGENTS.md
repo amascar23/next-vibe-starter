@@ -36,7 +36,7 @@
 ---
 
 ### Phase 2: Shell Layout & Komponen Modular
-- [ ] **Task 4: Navbar Glassmorphism & Footer Edukasi**
+- [x] **Task 4: Navbar Glassmorphism & Footer Edukasi**
   - **Goal**: Memperbarui Header navigasi sticky dengan efek glassmorphism, logo nama Annisa, link navigasi smooth-scroll, tombol unduh CV, dan Footer ramah dengan tautan media sosial.
   - **Files**: `src/components/layout/header.tsx`, `src/components/layout/footer.tsx`
   - **Acceptance Criteria**: Navigasi responsif sempurna di perangkat mobile (drawer/menu) dan desktop, anchor link meluncur mulus.

@@ -85,6 +85,14 @@
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Offset scroll agar seksi ber-id tidak tertutup oleh sticky header (h-16 = 4rem) */
+  section,
+  [id] {
+    scroll-margin-top: 5rem;
+  }
   body {
     @apply bg-background text-foreground antialiased selection:bg-sky-500/20 selection:text-sky-800 dark:selection:text-sky-200;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";

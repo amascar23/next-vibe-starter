@@ -1,52 +1,73 @@
 import Link from "next/link";
-import { Sparkles, Terminal, Github, BookOpen } from "lucide-react";
+import { GraduationCap, Download, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { NavLinks } from "./nav-links";
+import { MobileNav } from "./mobile-nav";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { profileData } from "@/data/portfolio";
 
+/**
+ * Header Navigasi Utama Sticky Glassmorphism
+ */
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 font-bold text-lg tracking-tight hover:opacity-90 transition-opacity">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-violet-600 to-indigo-600 text-white shadow-sm">
-            <Sparkles className="h-5 w-5" />
+    <header className="sticky top-0 z-40 w-full border-b border-border/70 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60 transition-colors duration-200">
+      <div className="max-w-6xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
+        {/* Brand / Logo */}
+        <Link
+          href="/#beranda"
+          className="group flex items-center gap-2.5 transition-opacity hover:opacity-90"
+        >
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-sky-400 via-sky-500 to-blue-600 text-white shadow-xs group-hover:scale-105 transition-transform">
+            <GraduationCap className="h-5 w-5" />
           </div>
-          <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-extrabold">
-            Next Vibe Starter
-          </span>
-          <Badge variant="purple" className="ml-1 text-[10px] hidden sm:inline-flex">
-            Anti-Slop AI
-          </Badge>
+          <div className="flex flex-col">
+            <div className="flex items-center gap-1.5">
+              <span className="text-base sm:text-lg font-black tracking-tight text-foreground">
+                Annisa
+              </span>
+              <Badge
+                variant="sky"
+                className="text-[10px] py-0 px-1.5 h-4 font-semibold hidden sm:inline-flex"
+              >
+                Pendidik
+              </Badge>
+            </div>
+            <span className="text-[10px] text-muted-foreground hidden sm:block font-medium -mt-0.5">
+              Inovator Pembelajaran
+            </span>
+          </div>
         </Link>
 
-        <nav className="flex items-center gap-4 text-sm font-medium">
+        {/* Desktop Navigation Links */}
+        <NavLinks />
+
+        {/* Action Controls: Theme Toggle, CTA & Mobile Hamburger */}
+        <div className="flex items-center gap-2.5">
+          {/* Tombol Unduh CV Desktop */}
           <a
-            href="#workflow"
-            className="text-muted-foreground hover:text-foreground transition-colors hidden md:inline-block"
-          >
-            Alur Vibe
-          </a>
-          <a
-            href="#rulesets"
-            className="text-muted-foreground hover:text-foreground transition-colors hidden md:inline-block"
-          >
-            Ruleset AI
-          </a>
-          <a
-            href="#prompts"
-            className="text-muted-foreground hover:text-foreground transition-colors hidden sm:inline-block"
-          >
-            Cheat Sheet
-          </a>
-          <a
-            href="https://github.com/amascar23/next-vibe-starter"
+            href={profileData.resumePdfUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-xs sm:text-sm px-3 py-1.5 rounded-md border border-border bg-card hover:bg-accent transition-colors"
+            className="hidden lg:inline-flex"
           >
-            <Github className="h-4 w-4" />
-            <span className="hidden sm:inline">GitHub</span>
+            <Button
+              variant="outline"
+              size="sm"
+              className="gap-1.5 text-xs font-semibold rounded-xl h-9 border-sky-300/40 dark:border-sky-800/60 hover:bg-sky-50 dark:hover:bg-sky-950/40"
+            >
+              <Download className="h-3.5 w-3.5 text-sky-600 dark:text-sky-400" />
+              <span>Unduh CV</span>
+            </Button>
           </a>
-        </nav>
+
+          {/* Theme Switcher Toggle */}
+          <ThemeToggle />
+
+          {/* Mobile Drawer Navigation */}
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
