@@ -54,7 +54,7 @@
   - **Files**: `src/components/sections/hero-section.tsx`, `src/components/sections/about-section.tsx`
   - **Acceptance Criteria**: Visual estetik, responsif di mobile/desktop, CTA terhubung dengan benar.
 
-- [ ] **Task 7: Seksi Publikasi Jurnal & Karya Inovasi Pembelajaran**
+- [x] **Task 7: Seksi Publikasi Jurnal & Karya Inovasi Pembelajaran**
   - **Goal**: Mengintegrasikan seksi daftar jurnal ilmiah dan galeri karya pembelajaran pada halaman beranda dengan filter kategori dan tombol menuju halaman detail.
   - **Files**: `src/components/sections/journals-section.tsx`, `src/components/sections/teaching-section.tsx`
   - **Acceptance Criteria**: Grid kartu jurnal dan karya tampil rapi, tombol menuju halaman detail berfungsi.

@@ -1,8 +1,12 @@
-import { HeroSection, AboutSection } from "@/components/sections";
-import { JournalCard, ProjectCard } from "@/components/portfolio";
-import { journalsData, projectsData, profileData } from "@/data/portfolio";
+import {
+  HeroSection,
+  AboutSection,
+  TeachingSection,
+  JournalsSection,
+} from "@/components/sections";
+import { profileData } from "@/data/portfolio";
 import { Button } from "@/components/ui/button";
-import { BookOpen, GraduationCap, MessageCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -13,55 +17,13 @@ export default function HomePage() {
       {/* 2. Seksi Tentang Saya & Filosofi (id="tentang") */}
       <AboutSection />
 
+      {/* 3. Seksi Karya & Inovasi Pembelajaran (id="karya") */}
+      <TeachingSection />
+
+      {/* 4. Seksi Publikasi Jurnal Ilmiah (id="jurnal") */}
+      <JournalsSection />
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
-        {/* 3. Seksi Karya Ajar Preview (id="karya") */}
-        <section id="karya" className="space-y-6">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-            <div>
-              <div className="flex items-center gap-2 text-sky-600 dark:text-sky-400 font-semibold text-sm">
-                <GraduationCap className="h-4 w-4" />
-                <span>Inovasi Pedagogik</span>
-              </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight mt-1">
-                Karya &amp; Media Pembelajaran
-              </h2>
-            </div>
-            <p className="text-sm text-muted-foreground max-w-md">
-              Rancangan modul tematik dan media pembelajaran interaktif yang telah diujicobakan pada peserta didik.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {projectsData.slice(0, 2).map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
-        </section>
-
-        {/* 4. Seksi Jurnal Ilmiah Preview (id="jurnal") */}
-        <section id="jurnal" className="space-y-6">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-            <div>
-              <div className="flex items-center gap-2 text-sky-600 dark:text-sky-400 font-semibold text-sm">
-                <BookOpen className="h-4 w-4" />
-                <span>Riset &amp; Diseminasi</span>
-              </div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight mt-1">
-                Publikasi Jurnal Ilmiah
-              </h2>
-            </div>
-            <p className="text-sm text-muted-foreground max-w-md">
-              Karya tulis ilmiah terakreditasi nasional SINTA, ISSN, dan jurnal pendidikan terbuka (Open Access).
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {journalsData.slice(0, 2).map((journal) => (
-              <JournalCard key={journal.id} journal={journal} />
-            ))}
-          </div>
-        </section>
-
         {/* 5. Seksi Pengalaman & Riwayat Preview (id="pengalaman") */}
         <section id="pengalaman" className="space-y-6">
           <div>

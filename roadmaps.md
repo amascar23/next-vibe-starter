@@ -96,7 +96,7 @@ flowchart TD
 | Task | Deskripsi | Output File | Status |
 | :--- | :--- | :--- | :---: |
 | **Task 6** | Seksi Hero (Avatar, Moto Guru, Status Kolaborasi, CTA) & Seksi Filosofi Mengajar | `src/components/sections/hero-section.tsx`, `about-section.tsx` | ✅ Done |
-| **Task 7** | Seksi Galeri Jurnal Ilmiah & Showcase Karya Inovasi Belajar | `src/components/sections/journals-section.tsx`, `teaching-section.tsx` | ⏳ Ready |
+| **Task 7** | Seksi Galeri Jurnal Ilmiah & Showcase Karya Inovasi Belajar | `src/components/sections/journals-section.tsx`, `teaching-section.tsx` | ✅ Done |
 | **Task 8** | Bento Grid Keahlian EdTech, Timeline Pengalaman Mengajar, Testimoni & Kontak 1-Klik | `src/components/sections/`, `src/app/page.tsx` | ⏳ Ready |
 
 ---
