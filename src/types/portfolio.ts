@@ -56,6 +56,13 @@ export interface SkillItem {
   level?: "dasar" | "menengah" | "mahir";
 }
 
+export interface SkillGroup {
+  id: string;
+  title: string;
+  description: string;
+  skills: string[];
+}
+
 export interface TimelineItem {
   id: string;
   roleOrDegree: string;

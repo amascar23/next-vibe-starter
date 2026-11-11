@@ -75,7 +75,7 @@ flowchart TD
 | Task | Deskripsi | Output File | Status |
 | :--- | :--- | :--- | :---: |
 | **Task 1** | Definisi Type Data TypeScript (Profil Guru, Jurnal, Karya Ajar, Timeline) | `src/types/portfolio.ts` | ✅ Done |
-| **Task 2** | Mock Data Realistis Pendidik & Jurnal Ilmiah SINTA/ISSN | `src/data/portfolio.ts` | ⏳ Ready |
+| **Task 2** | Mock Data Realistis Pendidik & Jurnal Ilmiah SINTA/ISSN | `src/data/portfolio.ts` | ✅ Done |
 | **Task 3** | Setup Tema Pastel Sky Blue (`sky-400`, `sky-500`, soft tints) & Toggle Mode | `tailwind.config.ts`, `globals.css` | ✅ Done |
 
 ---

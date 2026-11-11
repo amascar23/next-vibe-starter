@@ -23,7 +23,7 @@
   - **Files**: `src/types/portfolio.ts`, `src/types/index.ts`
   - **Acceptance Criteria**: Type compiling tanpa error (`npx tsc --noEmit`) dengan strict mode tanpa `any`.
 
-- [ ] **Task 2: Penyediaan Dummy Data Realistis Pendidik & Jurnal Ilmiah**
+- [x] **Task 2: Penyediaan Dummy Data Realistis Pendidik & Jurnal Ilmiah**
   - **Goal**: Membuat data dummy kaya dan relevan dengan dunia pendidikan (profil Annisa, 3 publikasi jurnal ilmiah terakreditasi, 4 karya inovasi pembelajaran, riwayat mengajar, keahlian EdTech, testimoni).
   - **Files**: `src/data/portfolio.ts`
   - **Acceptance Criteria**: Data terhubung penuh dengan interface TypeScript, dapat diimpor dan dibaca secara type-safe.
