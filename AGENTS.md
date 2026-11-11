@@ -72,7 +72,7 @@
   - **Files**: `src/app/jurnal/[slug]/page.tsx`
   - **Acceptance Criteria**: Routing dinamis berjalan lancar, penanganan 404 jika slug salah, tombol kembali ke beranda.
 
-- [ ] **Task 10: Halaman Detail Karya & Media Pembelajaran (`/karya/[slug]`)**
+- [x] **Task 10: Halaman Detail Karya & Media Pembelajaran (`/karya/[slug]`)**
   - **Goal**: Membuat halaman dinamis untuk studi kasus modul pembelajaran (tujuan pembelajaran, kurikulum, dampak terhadap siswa di kelas).
   - **Files**: `src/app/karya/[slug]/page.tsx`
   - **Acceptance Criteria**: Dokumentasi modul pembelajaran rapi dan mudah dibaca oleh sesama guru/mahasiswa.

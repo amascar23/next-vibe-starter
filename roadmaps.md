@@ -107,7 +107,7 @@ flowchart TD
 | Task | Deskripsi | Output File | Status |
 | :--- | :--- | :--- | :---: |
 | **Task 9** | Halaman Detail Jurnal Ilmiah: Abstrak lengkap, metodologi, download full paper | `src/app/jurnal/[slug]/page.tsx` | ✅ Done |
-| **Task 10** | Halaman Detail Modul Ajar: Kurikulum, implementasi kelas, dampak pada murid | `src/app/karya/[slug]/page.tsx` | ⏳ Ready |
+| **Task 10** | Halaman Detail Modul Ajar: Kurikulum, implementasi kelas, dampak pada murid | `src/app/karya/[slug]/page.tsx` | ✅ Done |
 
 ---
 
