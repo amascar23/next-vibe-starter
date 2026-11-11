@@ -329,6 +329,7 @@ export const timelineData: TimelineItem[] = [
 export const skillGroupsData: SkillGroup[] = [
   {
     id: "pedagogik",
+    category: "pedagogik",
     title: "Kompetensi Pedagogik",
     description: "Penguasaan teori pembelajaran mendalam, perancangan kurikulum adaptif, dan manajemen iklim kelas yang inklusif.",
     skills: [
@@ -344,6 +345,7 @@ export const skillGroupsData: SkillGroup[] = [
   },
   {
     id: "edtech",
+    category: "edtech",
     title: "Media & Teknologi Pembelajaran (EdTech)",
     description: "Kemahiran memanfaatkan piranti lunak multimedia dan platform interaktif untuk mendongkrak partisipasi aktif siswa.",
     skills: [
@@ -359,6 +361,7 @@ export const skillGroupsData: SkillGroup[] = [
   },
   {
     id: "softskill",
+    category: "soft-skill",
     title: "Keahlian Interpersonal & Kepemimpinan",
     description: "Kecakapan berkomunikasi secara empatik, menginspirasi peserta didik, serta berkolaborasi dengan komunitas pendidik.",
     skills: [
@@ -384,6 +387,7 @@ export const testimonialsData: TestimonialItem[] = [
     role: "Guru Senior & Ketua Musyawarah Guru Mata Pelajaran (MGMP)",
     institution: "SMP Negeri Mitra / Rekan Sejawat Guru", // GANTI DENGAN DATA ASLI
     avatarUrl: "/images/avatar-bambang.jpg", // GANTI DENGAN DATA ASLI
+    quote: "Ibu Annisa adalah sosok pendidik muda yang membawa energi pembaruan luar biasa di ruang guru kami. Terobosannya dalam memadukan gamifikasi asesmen dan modul ajar interaktif berhasil menginspirasi rekan-rekan pendidik senior untuk lebih berani bertransformasi digital.",
     content: "Ibu Annisa adalah sosok pendidik muda yang membawa energi pembaruan luar biasa di ruang guru kami. Terobosannya dalam memadukan gamifikasi asesmen dan modul ajar interaktif berhasil menginspirasi rekan-rekan pendidik senior untuk lebih berani bertransformasi digital.",
   },
   {
@@ -392,6 +396,7 @@ export const testimonialsData: TestimonialItem[] = [
     role: "Guru Besar & Dosen Pembimbing Skripsi",
     institution: "Fakultas Keguruan & Ilmu Pendidikan", // GANTI DENGAN DATA ASLI
     avatarUrl: "/images/avatar-irwan.jpg", // GANTI DENGAN DATA ASLI
+    quote: "Integritas riset dan keuletan Annisa dalam meneliti efektivitas model pembelajaran sangat menonjol sejak masa perkuliahan. Publikasi jurnal yang dihasilkannya memiliki landasan metodologi yang kokoh dan memberikan kontribusi nyata bagi pemecahan problem pembelajaran di kelas.",
     content: "Integritas riset dan keuletan Annisa dalam meneliti efektivitas model pembelajaran sangat menonjol sejak masa perkuliahan. Publikasi jurnal yang dihasilkannya memiliki landasan metodologi yang kokoh dan memberikan kontribusi nyata bagi pemecahan problem pembelajaran di kelas.",
   },
   {
@@ -400,6 +405,7 @@ export const testimonialsData: TestimonialItem[] = [
     role: "Rekan Peneliti & Alumni Kependidikan",
     institution: "Komunitas Guru Muda Indonesia", // GANTI DENGAN DATA ASLI
     avatarUrl: "/images/avatar-farhan.jpg", // GANTI DENGAN DATA ASLI
+    quote: "Berkolaborasi dengan Annisa dalam program pengabdian literasi pedesaan membuka mata saya tentang esensi mendidik dari hati. Annisa memiliki kepekaan analitis yang tajam dipadukan dengan kehangatan komunikasi yang membuat murid-murid selalu menantikan kehadirannya.",
     content: "Berkolaborasi dengan Annisa dalam program pengabdian literasi pedesaan membuka mata saya tentang esensi mendidik dari hati. Annisa memiliki kepekaan analitis yang tajam dipadukan dengan kehangatan komunikasi yang membuat murid-murid selalu menantikan kehadirannya.",
   },
   {
@@ -408,6 +414,7 @@ export const testimonialsData: TestimonialItem[] = [
     role: "Orang Tua / Wali Murid Kelas VIII",
     institution: "Komite Paguyuban Orang Tua Siswa", // GANTI DENGAN DATA ASLI
     avatarUrl: "/images/avatar-dewi.jpg", // GANTI DENGAN DATA ASLI
+    quote: "Putri saya yang sebelumnya sangat cemas dan tidak percaya diri setiap pelajaran hitungan, sekarang menjadi bersemangat menyambut hari sekolah. Pendekatan Bu Annisa yang sabar, ramah, dan menghargai proses belajar benar-benar membangkitkan rasa percaya diri anak kami.",
     content: "Putri saya yang sebelumnya sangat cemas dan tidak percaya diri setiap pelajaran hitungan, sekarang menjadi bersemangat menyambut hari sekolah. Pendekatan Bu Annisa yang sabar, ramah, dan menghargai proses belajar benar-benar membangkitkan rasa percaya diri anak kami.",
   },
 ];
